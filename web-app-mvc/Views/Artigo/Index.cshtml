@@ -4,5 +4,12 @@
 
 <div>
     <h1>Artigos</h1>
-    <p>@ViewData["data"] artigos encontrados</p>
+
+    <p>
+        @foreach (var item in (List<ArtigosModel>)ViewData["data"])
+        {
+            @item.Id @item.Descricao @item.Quantidade
+        }
+    </p>
+
 </div>

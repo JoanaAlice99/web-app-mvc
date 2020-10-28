@@ -58,6 +58,10 @@ namespace web_app_mvc
                     name: "Artigo",
                     pattern: "{controller=Artigo}/{action=Index}");
 
+                endpoints.MapControllerRoute(
+                    name: "SubmitArt",
+                    pattern: "{controller=Artigo}/{action=SubmitArt}");
+
             });
         }
     }
